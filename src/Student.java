@@ -1,6 +1,6 @@
 public class Student extends Person {
-    private static int studentId;
-    private int level;
+    private static int idCounter = 0;
+    private int level, studentId;
 
     public Student(String fName, String lName, int gLevel) {
         super(fName, lName);
@@ -10,6 +10,9 @@ public class Student extends Person {
         else {
             level = gLevel;
         }
+
+        studentId = idCounter;
+        idCounter++;
     }
 
     public int getLevel() {
