@@ -11,8 +11,8 @@ public class Student extends Person {
             level = gLevel;
         }
 
-        studentId = idCounter;
         idCounter++;
+        studentId = idCounter;
     }
 
     public int getLevel() {
