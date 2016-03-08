@@ -4,7 +4,7 @@ public class Student extends Person {
 
     public Student(String fName, String lName, int gLevel) {
         super(fName, lName);
-        if(gLevel < 0 && gLevel > 12) {
+        if(gLevel < 0 || gLevel > 12) {
             level = 0;
         }
         else {
