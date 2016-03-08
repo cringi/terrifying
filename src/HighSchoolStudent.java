@@ -12,6 +12,6 @@ public class HighSchoolStudent extends Student {
     }
 
     public String toString() {
-        return super.toString() + String.format("%n   GPA: %.1f", gpa);
+        return super.toString() + String.format("%n   GPA: %.2f", gpa);
     }
 }
